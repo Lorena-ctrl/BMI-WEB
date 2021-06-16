@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI WEB</title>
+    <link rel="shorcut icon" type ="image/x-icon" href="img/bmi.ico">
+
+  </head>
+
+
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+
+          <form action="#" class="sign-in-form">
+            <h2 class="title">BMI</h2>
+            <div class="input-field">
+              <img src="img/altura.png" alt="">
+              <input id="altura" type="text" placeholder="Altura (metros)" />
+            </div>
+            <div class="input-field">
+              <img src="img/peso.png" alt="">
+              <input id="peso" type="text" placeholder="Peso (kilogramos)" />
+            </div>
+
+            <input type="submit" value="Calcular" class="btn solid" id="calculo" />
+            <h6>®Lorena GL</h3>
+
+            <!-- <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a> -->
+            <!-- </div> -->
+          </form>
+
+
+          <form action="#" class="sign-up-form">
+            <h2 class="title">RESULTADOS</h2>
+
+            <p class="resultados">
+              Altura: <span id="talla"></span><br>
+              Peso: <span id="peso1"></span><br>
+              BMI: <span id="BMI"></span><br>
+              Clasificacion: <span id="categoria"></span><br>
+              Riesgo: <span id="riesgo"></span><br>
+            </p>
+
+            <table><!--crear tabla-->
+              <tr id="titulo"> <!--crear filas-->
+                  <th>Clasificacion</th><!--td es una columna-->
+                  <th>BMI(Kg/m^2)</th>
+                  <th>Riesgo</th>
+              </tr>
+              <tr id="normal"> <!--crear filas-->
+                  <td>Normal</td>
+                  <td>18.5-24.9</td>
+                  <td>Promedio</td>
+              </tr>
+              <tr id="So"> <!--crear filas-->
+                  <td>Sobrepeso</td>
+                  <td>25-29.9</td>
+                  <td>Aumentado</td>
+              </tr>
+              <tr id="OG1"> <!--crear filas-->
+                <td>Obesidad grado I</td>
+                <td>30-34.9</td>
+                <td>Moderado</td>
+            </tr>
+            <tr id="OG2"> <!--crear filas-->
+                <td>Obesidad grado II</td>
+                <td>35-39.9</td>
+                <td>Severo</td>
+            </tr>
+            <tr id="OG3"> <!--crear filas-->
+              <td>Obesidad grado III</td>
+              <td>Mas de 40</td>
+              <td>Muy severo</td>
+          </tr>
+          </table>
+
+
+
+            <!-- <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div> -->
+            <!-- <input type="submit" class="btn" value="Sign up" /> -->
+
+            <!-- <p class="social-text">Or Sign up with social platforms</p> -->
+
+            <!-- <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div> -->
+
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Calculadora BMI</h3>
+            <p>
+              Esta calculadora proporciona el BMI (índice de masa corporal) y 
+              la correspondiente categoría de nivel de peso según el BMI.
+              <b>Utilícela para adultos de 20 años o más.</b> 
+            </p>
+            <!-- <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button> -->
+          </div>
+          <img src="img/inicio.svg" class="image" alt="" />
+        </div>
+
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Recomendaciones</h3>
+            <p id="recomendacion">
+              
+            </p>
+            <button class="btn transparent" id="inicio">
+              Volver a calcular
+            </button>
+          </div>
+          <img src="img/recomendacion.svg" class="image" alt="" />
+        </div>
+
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
